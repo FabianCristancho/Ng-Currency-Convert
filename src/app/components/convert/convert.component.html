@@ -1,7 +1,9 @@
 <div class="h-screen content">
-    <app-navbar class="m-0"></app-navbar>
-    <div class="flex flex-col justify-center items-center">
-        <h1 class="text-white font-medium text-center py-5 text-3xl md:text-5xl">Currencies Convert</h1>
+    <div class="mb-5">
+        <app-navbar></app-navbar>
+    </div>
+    <div class="flex flex-col justify-center items-center pb-10 md:pb-0 bg-yellow-400 md:bg-transparent">
+        <h1 class="text-yellow-600 font-medium text-center py-5 text-3xl md:text-5xl">Currencies Convert</h1>
         <div class="flex flex-col justify-center items-center border px-2 sm:px-3 md:px-10 py-8 bg-gray-50 sm:shadow-2xl">
             <div class="flex items-center">
                 <button>
@@ -49,11 +51,9 @@
                     class="border border-8 border-blue-600 rounded-md focus:outline-none focus:ring focus:border-blue-300 py-2 px-1 sm:px-4 md:px-10 mb-3 mt-6 text-center sm:text-xl"
                     [ngModel]="valueConvert | currency:this.convertedCurrency:'symbol':'0.0-5'" disabled>
             </div>
-        </div>
-        <div class="absolute bottom-0 left-0 w-full">
-            <app-footer></app-footer>
-          </div>
-
-        
+        </div> 
+    </div>
+    <div class="object-bottom md:absolute md:bottom-0 md:left-0 w-full bg-yellow-400">
+        <app-footer></app-footer>
     </div>
 </div>
