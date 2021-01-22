@@ -1,0 +1,22 @@
+<div class="flex justify-center md:items-center md:h-screen md:bg-yellow-100">
+    <div class="flex flex-col items-center md:border w-4/5 h-4/5 md:shadow-2xl md:bg-yellow-600 card-about">
+        <div class="flex flex-col md:flex-row md:self-start justify-start">
+            <a [routerLink]="['/home']" class="ml-10 md:ml-20 my-5 md:self-start">
+                <i class="fas fa-comment-dollar text-6xl text-center"></i>
+              </a>
+              <h1 class="text-center md:text-left text-5xl md:ml-5 my-5 self-start font-bold text-yellow-900">Currency Convert</h1>
+        </div>
+        <div class="flex flex-col-reverse md:flex-row items-center justify-center">
+            <div class="flex flex-col justify-between flex-1 md:ml-20">
+                <p class="text-xl text-center my-5 md:my-20">This application allows you to convert the most famous currencies in the world. It was made to be simple to use and present interactivity in all its windows</p>
+                <button class="px-10 py-3 my-5 bg-yellow-700 hover:bg-yellow-800 mx-auto text-white" (click)="redirectHome()">Return to Home</button>
+            </div>
+            <div class="flex-1">
+                <img src="assets/about.png" alt="About" class="w-1/2 mx-auto">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md:absolute md:bottom-0 left-0 w-full">
+    <app-footer></app-footer>
+</div>

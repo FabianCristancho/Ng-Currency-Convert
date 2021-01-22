@@ -1,0 +1,11 @@
+.card-about {
+    background-image: url('../../../assets/patron_about.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px){
+    .card-about {
+        background-image: none;
+    }
+}

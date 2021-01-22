@@ -1,0 +1,10 @@
+.contac_img {
+    background-image: url('../../../assets/patron_contact.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}

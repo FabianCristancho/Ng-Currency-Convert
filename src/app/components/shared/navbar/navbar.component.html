@@ -1,0 +1,33 @@
+<div class="flex pt-6 justify-end sm:justify-between">
+  <a [routerLink]="['/home']" class="hidden sm:block">
+    <i class="fas fa-comment-dollar ml-6 text-6xl text-white"></i>
+  </a>
+  <div class="flex-grow bg-yellow-600 text-center ml-4 shadow-xl"
+    [ngClass]="{'hidden': !navActive, 'animated, fadeIn': navActive }">
+    <a [routerLink]="['/home']" class="block sm:hidden mt-2">
+      <i class="fas fa-comment-dollar ml-6 text-6xl text-white"></i>
+    </a>
+    <ul class="my-3 text-white">
+      <li><a href="" class="hover:underline text-lg" [ngClass]="{'transition duration-300 ease-in': navActive}">Home</a>
+      </li>
+      <li><a [routerLink]="['/convert']" class="hover:underline text-lg"
+          [ngClass]="{'transition duration-500 ease-in': navActive}">Convert</a></li>
+      <li><a [routerLink]="['/currency']" class="hover:underline text-lg"
+          [ngClass]="{'transition duration-500 ease-in': navActive}">Currencies</a></li>
+      <li><a [routerLink]="['/about']" class="hover:underline text-lg"
+          [ngClass]="{'transition duration-700 ease-in': navActive}">About</a></li>
+      <li><a [routerLink]="['/contact']" class="hover:underline text-lg"
+          [ngClass]="{'transition duration-1000 ease-in': navActive}">Contact</a></li>
+    </ul>
+  </div>
+  <div class="mx-5">
+    <button id="button"
+      class="flex items-center px-4 py-3 border rounded text-white border-white hover:text-gray-200 hover:bg-yellow-600 hover:border-yellow-600 appearance-none focus:outline-none"
+      (click)="navActive=!navActive">
+      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <title>Menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+      </svg>
+    </button>
+  </div>
+</div>
